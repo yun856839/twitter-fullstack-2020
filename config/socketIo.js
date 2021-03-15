@@ -1,7 +1,6 @@
 module.exports = (httpServer) => {
   const io = require('socket.io')(httpServer)
-  const moment = require('moment')
-  moment.locale('zh-tw')
+  const moment = require('moment')  
   const db = require('../models')
   const Message = db.Message
 
